@@ -4,7 +4,7 @@
   "description": "A barebone typescript nodejs starter with 0 dependencies",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint --ext .ts src/"
   },
   "keywords": [
     "typescript",
@@ -13,11 +13,18 @@
     "barebone"
   ],
   "author": "Han Li",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vcfvct/typescript-node-starter-barebone.git"
+  },
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^12.7.3",
-    "ts-node": "^8.3.0",
-    "tslint": "^5.19.0",
-    "typescript": "^3.6.2"
+    "@types/node": "^12.12.14",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "eslint": "^6.7.2",
+    "eslint-config-ts-vcfvct": "^1.0.0",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
   }
 }
